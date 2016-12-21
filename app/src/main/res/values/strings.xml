@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">AndroidVideoDownload</string>
-    <string name="get_url_title">First parse a page</string>
+    <string name="title_text">Waiting for user\'s input</string>
     <string name="url_input_hint">Type URL</string>
     <string name="get_button">Get parsed page</string>
-    <string name="found_url">Found url appears here</string>
+    <string name="api_button">Get download link</string>
+    <string name="links_text_hint">Found link will appear here</string>
+    <string name="download_text_hint">Download link will appear here</string>
+    <string name="download_button">Download video</string>
 </resources>
