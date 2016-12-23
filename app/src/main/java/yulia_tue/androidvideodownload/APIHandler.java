@@ -68,17 +68,13 @@ public class APIHandler extends AsyncTask<String, String, String>{
             rd.close();
             Log.d(TAG, "response: " + response.toString());
 
-            JSONObject jsonResponse = new JSONObject(response.toString());
-            String downloadLink = jsonResponse.getString("download");
-            return downloadLink;
+            return response.toString();
 
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (ProtocolException e) {
             e.printStackTrace();
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (JSONException e) {
             e.printStackTrace();
         } finally {
             if(connection != null) {
@@ -93,7 +89,7 @@ public class APIHandler extends AsyncTask<String, String, String>{
     protected void onPostExecute(String result) {
         super.onPostExecute(result);
         this.status.setText("APIHandler done ");
-        this.download.setText(result);
+        this.download.setText(result.substring(0, 15) + "...");
         this.downloadButton.setEnabled(true);
     }
 
