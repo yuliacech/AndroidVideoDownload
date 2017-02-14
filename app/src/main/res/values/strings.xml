@@ -7,4 +7,7 @@
     <string name="links_text_hint">Found link will appear here</string>
     <string name="download_text_hint">Download link will appear here</string>
     <string name="download_button">Download video</string>
+    <string name="search_title">Search</string>
+    <string name="help_title">Help</string>
+    <string name="search_hint">Search tv shows</string>
 </resources>
